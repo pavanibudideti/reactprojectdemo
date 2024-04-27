@@ -1,0 +1,121 @@
+
+/* Form container */
+form {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: #333; /* Dark gray color for labels */
+  }
+  
+  /* Input fields */
+  input[type='text'],
+  input[type='password'],
+  input[type='number'],
+  input[type='email'],
+  select,
+  input[type='date'],
+  textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background for input fields */
+    color: #333; /* Dark gray text color */
+  }
+  
+  /* Submit button */
+  button[type='submit'] {
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Button hover effect */
+  button[type='submit']:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+
+
+
+/* Apply basic styles to the table */
+.colorful-table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.colorful-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the table header */
+.colorful-th {
+  background-color: #4caf50; /* Green background for header */
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Style the table data cells */
+.colorful-td {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd; /* Light grey border */
+}
+
+/* Alternate row background color */
+.colorful-tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+/* Set different background colors for each column */
+.colorful-td:nth-child(1) {
+  background-color: #ffa07a; /* Light salmon for first column */
+}
+
+.colorful-td:nth-child(2) {
+  background-color: #add8e6; /* Light blue for second column */
+}
+
+.colorful-td:nth-child(3) {
+  background-color: #90ee90; /* Light green for third column */
+}
+
+/* Hover effect on rows */
+.colorful-tr:hover {
+  background-color: #e7f6e8; /* Light green background on hover */
+}
+
+/* Responsive table styles */
+@media screen and (max-width: 600px) {
+  .colorful-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+  .colorful-table {
+    width: 100%;
+  }
+  .colorful-th,
+  .colorful-td {
+    padding: 8px;
+  }
+}
