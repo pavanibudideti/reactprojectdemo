@@ -38,6 +38,8 @@ export default function App() {
   return (
     <div className="App">
       <h3 align="center">PET ADAPTION AND ACCESSORIES MANAGEMENT SYSTEM </h3>
+      <h3 align="center">
+"Welcome to our Pet Adoption Center! Where every wag of a tail and purr of a friend brings joy to your home. Find your perfect companion today!" </h3>
       <Router>
         {isAdminLoggedIn ? (
          <AdminnavBar/>
