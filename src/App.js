@@ -49,7 +49,7 @@ export default function App() {
           <SellerNavBar />
         ) : (
           <MainNavBar
-            onAdminLogin={onAdminLogin} //the above three are props 
+            onAdminLogin={onAdminLogin} 
             onCustomerLogin={onCustomerLogin}
             onSellerLogin={onSellerLogin}
           />
