@@ -5,7 +5,7 @@ import SellerHome from './SellerHome';
 import SellerProfile from './SellerProfile';
 import AddPet from './AddPet';
 import ViewPets from './ViewPets';
-import ViewPetApplicants from './ViewPetApplicants';
+//import ViewPetApplicants from './ViewPetApplicants';
 
 
 export default function SellerNavBar() {
@@ -33,7 +33,7 @@ const navigate = useNavigate();
             <Link to="/viewpets">View Pets</Link>
             </div>
     </li>
-    <Link to="/viewpetapplicants">Pet Applicants</Link>
+    {/* <Link to="/viewpetapplicants">Pet Applicants</Link> */}
      <li><button className="logoutButton" onClick={handleLogout}>Logout</button></li>
      </ul>
      </nav>
@@ -43,7 +43,7 @@ const navigate = useNavigate();
          <Route path="/sellerprofile" element={<SellerProfile/>} exact/>
          <Route path="/addpet" element={<AddPet/>} exact/>
          <Route path="/viewpets" element={<ViewPets/>} exact/>
-         <Route path="/viewpetapplicants" element={<ViewPetApplicants/>} exact/>
+         {/* <Route path="/viewpetapplicants" element={<ViewPetApplicants/>} exact/> */}
         </Routes>
 
     </div>
